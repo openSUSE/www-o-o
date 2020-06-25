@@ -1,0 +1,61 @@
+site_description: 系统管理员、开发者和桌面用户的匠心之选。
+site_copyright: © 2011-2020 openSUSE 贡献者
+
+search: 搜索
+translate: 翻译
+
+privacy: 隐私
+source_code: 源码
+license: 许可
+
+locale_date:
+  date:
+    day_names:
+      - 星期日
+      - 星期一
+      - 星期二
+      - 星期三
+      - 星期四
+      - 星期五
+      - 星期六
+    month_names:
+      - ''
+      - 一月
+      - 二月
+      - 三月
+      - 四月
+      - 五月
+      - 六月
+      - 七月
+      - 八月
+      - 九月
+      - 十月
+      - 十一月
+      - 十二月
+    abbr_day_names:
+      - 周日
+      - 周一
+      - 周二
+      - 周三
+      - 周四
+      - 周五
+      - 周六
+    abbr_month_names:
+      - ''
+      - 一月
+      - 二月
+      - 三月
+      - 四月
+      - 五月
+      - 六月
+      - 七月
+      - 八月
+      - 九月
+      - 十月
+      - 十一月
+      - 十二月
+  time:
+    am: "上午"
+    pm: "下午"
+    formats:
+      default: "%Y 年%b %-d 日"
