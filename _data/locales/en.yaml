@@ -8,54 +8,10 @@ privacy: Privacy
 license: License
 source_code: Source Code
 
-locale_date:
-  date:
-    day_names:
-      - Sunday
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-      - Saturday
-    month_names:
-      - ''
-      - January
-      - February
-      - March
-      - April
-      - May
-      - June
-      - July
-      - August
-      - September
-      - October
-      - November
-      - December
-    abbr_day_names:
-      - Sun
-      - Mon
-      - Tue
-      - Wed
-      - Thu
-      - Fri
-      - Sat
-    abbr_month_names:
-      - ''
-      - Jan
-      - Feb
-      - Mar
-      - Apr
-      - May
-      - Jun
-      - Jul
-      - Aug
-      - Sep
-      - Oct
-      - Nov
-      - Dec
-  time:
-    am: "am"
-    pm: "pm"
-    formats:
-      default: "%B %d, %Y"
+tumbleweed_summary: Get the newest Linux packages with our rolling release. Fast! Integrated! Stabilized! Tested!
+leap_summary: Get the most complete Linux distribution with openSUSE’s latest regular-release version!
+kubic_summary: Certified Kubernetes distribution & container-related technologies built by the openSUSE community
+
+download_tumbleweed: Download Tumbleweed
+download_leap: Download Leap %1
+learn_about_kubic: Learn about Kubic

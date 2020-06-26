@@ -1,0 +1,28 @@
+#animated-background,
+#animated-background canvas {
+  position: fixed !important;
+  width: 100%;
+  height: calc(100vh - 3.5rem - 2px);
+  top: calc(3.5rem + 2px) !important;
+  z-index: -1 !important;
+  opacity: 0.5;
+}
+
+.distro-logo {
+  display: block;
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+}
+
+#screenshot-wrap {
+  position: relative;
+}
+
+#screenshot-carousel {
+  position: absolute;
+  width: 83.3333%;
+  height: auto;
+  left: 8.3333%;
+  top: 7.0175%;
+}

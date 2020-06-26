@@ -8,54 +8,10 @@ privacy: 隐私
 source_code: 源码
 license: 许可
 
-locale_date:
-  date:
-    day_names:
-      - 星期日
-      - 星期一
-      - 星期二
-      - 星期三
-      - 星期四
-      - 星期五
-      - 星期六
-    month_names:
-      - ''
-      - 一月
-      - 二月
-      - 三月
-      - 四月
-      - 五月
-      - 六月
-      - 七月
-      - 八月
-      - 九月
-      - 十月
-      - 十一月
-      - 十二月
-    abbr_day_names:
-      - 周日
-      - 周一
-      - 周二
-      - 周三
-      - 周四
-      - 周五
-      - 周六
-    abbr_month_names:
-      - ''
-      - 一月
-      - 二月
-      - 三月
-      - 四月
-      - 五月
-      - 六月
-      - 七月
-      - 八月
-      - 九月
-      - 十月
-      - 十一月
-      - 十二月
-  time:
-    am: "上午"
-    pm: "下午"
-    formats:
-      default: "%Y 年%b %-d 日"
+tumbleweed_summary: 安装我们的滚动版本，获取最新 Linux 软件包。 日新月异！整合如一！坚如磐石！久经检验！
+leap_summary: 安装 openSUSE 最新的常规发布版本，获取最完整的 Linux 发行版体验！
+kubic_summary: 由 openSUSE 社区构建的经过认证的 Kubernetes 分发和与容器相关的技术
+
+download_tumbleweed: 下载 Tumbleweed
+download_leap: 下载 Leap %1
+learn_about_kubic: 了解 Kubic
