@@ -1,0 +1,68 @@
+title: openSUSE
+title_short: openSUSE
+description: The homepage for the openSUSE Project, a worldwide effort to develop and promote open source software
+email: admin@opensuse.org
+copyright: © 2005-2021 openSUSE contributors
+baseurl: ""
+url: https://www.opensuse.org
+github_url: https://github.com/openSUSE/www-o-o
+weblate_url: https://l10n.opensuse.org/projects/www-o-o/
+
+navbar_links:
+  - text: Technologies
+    link: /#technologies
+  - text: News
+    link: /#news
+  - text: Community
+    link: /#community
+  - locales
+
+footer_links:
+  -
+    text: source_code
+    link: https://github.com/openSUSE/www-o-o
+  -
+    text: license
+    link: https://raw.githubusercontent.com/openSUSE/www-o-o/main/LICENSE
+
+collections:
+- banners
+
+rss:
+  source: https://news.opensuse.org/feed.xml
+
+# Only edit below if you know what you are doing!
+
+defaults:
+  -
+    scope:
+      path: "*.html"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "*.md"
+    values:
+      layout: "markdown"
+  -
+    scope:
+      path: "*.markdown"
+    values:
+      layout: "markdown"
+
+navbar_class: navbar-expand-md sticky-top
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-locale
+theme: jekyll-theme-opensuse
+markdown: kramdown
+
+localization:
+  mode       : auto
+  locale     : en
+  locales_set:
+    en:
+      name: English
+
+exclude: [README.md, LICENSE, Gemfile, Gemfile.lock, vendor, Rakefile]

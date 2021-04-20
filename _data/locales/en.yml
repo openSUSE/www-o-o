@@ -1,0 +1,101 @@
+site_title: openSUSE
+site_title_short: openSUSE
+site_description: The homepage for the openSUSE Project, a worldwide effort to develop and promote open source software
+site_copyright: © 2021 openSUSE contributors
+search: Search
+translate: Translate
+source_code: Source Code
+license: License
+learn_more: Learn More
+technologies:
+  config:
+    name: System Configuration
+    description: |
+      YaST and yomi provide easy ways to install an operating system
+      onto a computer or other forms of machines. YaST also provides
+      its powerful tooling 
+    software:
+      yast:
+        name: YaST
+        url: https://yast.opensuse.org
+      yomi:
+        name: yomi
+        url: https://github.com/openSUSE/yomi
+  build:
+    name: Packaging
+    description: |
+      Thanks to Open Build Service packaging software for most
+      distributions is easy. The review process aided by the staging
+      process using openQA and Cavil makes it possible to verify that
+      packages going into the repository work and are licensed under
+      licenses compatible with the repository.
+    software:
+      obs:
+        name: Open Build Service
+        url: https://openbuildservice.org
+      openqa:
+        name: openQA
+        url: https://open.qa
+      cavil:
+        name: Cavil
+        url: https://github.com/openSUSE/cavil
+  container:
+    name: Images and Containers
+    description:
+    software:
+      obs:
+        name: Open Build Service
+        url: https://openbuildservice.org
+      cooverview:
+        name: cooverview
+        url: https://github.com/openSUSE/cooverview
+  testing:
+    name: Testing
+    description:
+    software:
+      openqa:
+        name: openQA
+        url: https://open.qa
+  calendar:
+    name: Event organization
+    description:
+    software:
+      osem:
+        name: OSEM
+        url: https://osem.io
+      tsp:
+        name: Travel Support Program
+        url: https://github.com/openSUSE/travel-support-program
+  btrfs:
+    name: btrfs
+    description:
+    software:
+      snapper:
+        name: snapper
+        url: https://snapper.io
+      tu:
+        name: transactional-update
+        url: https://github.com/openSUSE/transactional-update
+  integration:
+    name: Linux integration
+    description:
+    software:
+      libstorage:
+        name: libstorage-ng
+        url: https://github.com/openSUSE/libstorage-ng
+      libpathrs:
+        name: libpathrs
+        url: https://github.com/openSUSE/libpathrs
+      libeconf:
+        name: libeconf
+        url: https://github.com/openSUSE/libeconf
+  collaboration:
+    name: Development collaboration
+    description:
+    software:
+      trollolo:
+        name: trollolo
+        url: https://github.com/openSUSE/trollolo
+      osc-plugin-collab:
+        name: osc-plugin-collab
+        url: https://github.com/openSUSE/osc-plugin-collab

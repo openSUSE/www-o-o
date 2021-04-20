@@ -1,0 +1,21 @@
+<div class="{{ include.style }} p-3">
+	<a class="text-black link_unstyled" href="{% if post.link %}{{ post.link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
+		<div class="card h-100">
+			<div class="top-article bg-light d-flex border-bottom card-body"
+				style="background-image: url('{% if post.image contains 'http' %}{% else %}{{ site.baseurl }}{% endif %}{{ post.image }}');">
+				<h4 class="m-auto text-center ontop font-weight-bold">{{ post.title }}</h4>
+			</div>
+			<div>
+				<div class="card-body">
+					<div class="font-weight-bold text-muted d-flex justify-content-between align-items-center text-break">
+						<span>{{ post.author }}</span>
+						<span>{{ post.date | date: site.date_format }}</span>
+					</div>
+					<div class="text-justify h-96px">
+						<p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 175 }}{% endif %}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
