@@ -51,15 +51,15 @@ technologies:
         url: https://github.com/openSUSE/cooverview
   testing:
     name: Testing
-    description:
-    software:
+    description: openQA is an automated test tool for operating systems and the engine at the heart of openSUSE's automated testing initiative. The project is used by open-source projects like Fedora, Qubes OS and others.
+    software: Perl
       openqa:
         name: openQA
         url: https://open.qa
   calendar:
     name: Event organization
-    description:
-    software:
+    description: The Open Source Event Manager assists with communicating the value of an event by having a splash page, agenda and more. It allows for the submission of proposals for talks, rating and evaluating of submissions and the scheduling of events. It also provides analytics and lets visitors register and buy tickets for an event. 
+    software: Ruby
       osem:
         name: OSEM
         url: https://osem.io
