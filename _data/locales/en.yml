@@ -1,6 +1,8 @@
 site_title: openSUSE
 site_title_short: openSUSE
-site_description: The homepage for the openSUSE Project, a worldwide effort to develop and promote open source software
+site_description: |
+  The homepage for the openSUSE Project, a worldwide effort to develop
+  and promote open source software
 site_copyright: © 2021 openSUSE contributors
 search: Search
 translate: Translate
@@ -13,7 +15,7 @@ technologies:
     description: |
       YaST and yomi provide easy ways to install an operating system
       onto a computer or other forms of machines. YaST also provides
-      its powerful tooling 
+      its powerful tooling
     software:
       yast:
         name: YaST
@@ -33,15 +35,12 @@ technologies:
       obs:
         name: Open Build Service
         url: https://openbuildservice.org
-	description: The Open Build Service (OBS) is a generic system to build and distribute binary packages from sources in an automatic, consistent and reproducible way. You can release packages as well as updates, add-ons, appliances and entire distributions for a wide range of operating systems and hardware architectures. 
       openqa:
         name: openQA
         url: https://open.qa
-	description: openQA is an automated test tool for operating systems and the engine at the heart of openSUSE's automated testing initiative. The project is used by open-source projects like Fedora, Qubes OS and others.
       cavil:
         name: Cavil
         url: https://github.com/openSUSE/cavil
-	description: Cavil is a legal review system for the Open Build Service. The project is used in the development of openSUSE Tumbleweed, openSUSE Leap, as well as SUSE Linux Enterprise. The tool set consists of more than 20000 patterns for all known Open-Source licenses.
   container:
     name: Images and Containers
     description:
@@ -49,41 +48,52 @@ technologies:
       obs:
         name: Open Build Service
         url: https://openbuildservice.org
-	description: The Open Build Service (OBS) is a generic system to build and distribute binary packages from sources in an automatic, consistent and reproducible way. You can release packages as well as updates, add-ons, appliances and entire distributions for a wide range of operating systems and hardware architectures.
       cooverview:
         name: cooverview
         url: https://github.com/openSUSE/cooverview
   testing:
     name: Testing
-    description: Container Overview - A simple CGI script to read container information from an OCI container registry and display it.
+    description: |
+      openQA is an automated test tool for operating systems
+      and the engine at the heart of openSUSE's automated testing
+      initiative. The project is used by open-source projects like
+      Fedora, Qubes OS and others.
+    software:
+      openqa:
+        name: openQA
+        url: https://open.qa
   calendar:
     name: Event organization
-    description: fedcal repackaged for openSUSE 
-  pagure:
-    name: Pagure 
-    description: The project tracks code and tasks via <https://code.opensuse.org>.
-	url: https://code.opensuse.org
+    description: |
+      The Open Source Event Manager assists with communicating the value
+      of an event by having a splash page, agenda and more. It allows
+      for the submission of proposals for talks, rating and evaluating
+      of submissions and the scheduling of events. It also provides
+      analytics and lets visitors register and buy tickets for an event.
+      The openSUSE Travel Support Program aims to support contributors
+      representing openSUSE at events, conferences and hack-fests with
+      their travel and hotel costs. The program pays up to 80% of the
+      travel and/or hotel costs for contributors who could not afford
+      going to these events otherwise.
+    software:
       osem:
         name: OSEM
         url: https://osem.io
-    	description: The Open Source Event Manager (OSEM) assists with communicating the value of an event by having a splash page, agenda and more. It allows for the submission of proposals for talks, rating and evaluating of submissions and the scheduling of events. It also provides analytics and lets visitors register and buy tickets for an event. 
-    software: Ruby
       tsp:
         name: Travel Support Program
         url: https://github.com/openSUSE/travel-support-program
-	description: The openSUSE Travel Support Program aims to support contributors representing openSUSE at events, conferences and hack-fests with their travel and hotel costs. The program pays up to 80% of the travel and/or hotel costs for contributors who could not afford going to these events otherwise.
-  chats: 
-    name: chat.opensuse.org
-    description: Chat is a resource used to connect with the openSUSE Community. The bridges established allow for smooth communication lines for people who want to get involved with the openSUSE Project.
-	url: https://chat.opensuse.org/
   btrfs:
     name: btrfs
-    description: Btrfs is a file system that uses a copy on write (CoW) principle that provides full-copy snapshots of files on the system. The project started in 2007 and is a part of the Linux kernel. It is under active development and jointly developed by multiple companies.
+    description: |
+      Btrfs is a file system that uses a copy on write (CoW) principle
+      that provides full-copy snapshots of files on the system. The
+      project started in 2007 and is a part of the Linux kernel. It is
+      under active development and jointly developed by multiple
+      companies.
     software:
       snapper:
         name: snapper
         url: https://snapper.io
-	description: Snapper is a tool for filesystem snapshot management. The use of Snapper with btrfs allow for automatic configuration of Snapper, which will provide snapshots that allow users to roll back their system to a functioning state should the need arise.
       tu:
         name: transactional-update
         url: https://github.com/openSUSE/transactional-update
