@@ -1,6 +1,8 @@
 site_title: openSUSE
 site_title_short: openSUSE
-site_description: The homepage for the openSUSE Project, a worldwide effort to develop and promote open source software
+site_description: |
+  The homepage for the openSUSE Project, a worldwide effort to develop
+  and promote open source software
 site_copyright: © 2021 openSUSE contributors
 search: Search
 translate: Translate
@@ -13,7 +15,7 @@ technologies:
     description: |
       YaST and yomi provide easy ways to install an operating system
       onto a computer or other forms of machines. YaST also provides
-      its powerful tooling 
+      its powerful tooling
     software:
       yast:
         name: YaST
@@ -51,14 +53,28 @@ technologies:
         url: https://github.com/openSUSE/cooverview
   testing:
     name: Testing
-    description:
+    description: |
+      openQA is an automated test tool for operating systems
+      and the engine at the heart of openSUSE's automated testing
+      initiative. The project is used by open-source projects like
+      Fedora, Qubes OS and others.
     software:
       openqa:
         name: openQA
         url: https://open.qa
   calendar:
     name: Event organization
-    description:
+    description: |
+      The Open Source Event Manager assists with communicating the value
+      of an event by having a splash page, agenda and more. It allows
+      for the submission of proposals for talks, rating and evaluating
+      of submissions and the scheduling of events. It also provides
+      analytics and lets visitors register and buy tickets for an event.
+      The openSUSE Travel Support Program aims to support contributors
+      representing openSUSE at events, conferences and hack-fests with
+      their travel and hotel costs. The program pays up to 80% of the
+      travel and/or hotel costs for contributors who could not afford
+      going to these events otherwise.
     software:
       osem:
         name: OSEM
@@ -68,7 +84,12 @@ technologies:
         url: https://github.com/openSUSE/travel-support-program
   btrfs:
     name: btrfs
-    description:
+    description: |
+      Btrfs is a file system that uses a copy on write (CoW) principle
+      that provides full-copy snapshots of files on the system. The
+      project started in 2007 and is a part of the Linux kernel. It is
+      under active development and jointly developed by multiple
+      companies.
     software:
       snapper:
         name: snapper
