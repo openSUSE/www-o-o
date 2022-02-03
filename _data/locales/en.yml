@@ -117,7 +117,7 @@ technologies:
       Some of the work can now be automated with the osc collab plugin, which makes 
       it much easier for new users to get started in packaging. It also allows you 
       to work on a single package with the same name from multiple projects, where 
-      they will be updated simultanously. 
+      they will be updated simultaneously. 
     software:
       trollolo:
         name: trollolo
