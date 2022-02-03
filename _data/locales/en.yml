@@ -112,7 +112,12 @@ technologies:
         url: https://github.com/openSUSE/libeconf
   collaboration:
     name: Development collaboration
-    description:
+    description: |
+      The OSC Collaboration tools can be used to facilitate packaging in openSUSE. 
+      Some of the work can now be automated with the osc collab plugin, which makes 
+      it much easier for new users to get started in packaging. It also allows you 
+      to work on a single package with the same name from multiple projects, where 
+      they will be updated simultaneously. 
     software:
       trollolo:
         name: trollolo
