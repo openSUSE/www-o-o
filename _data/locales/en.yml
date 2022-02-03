@@ -13,9 +13,10 @@ technologies:
   config:
     name: System Configuration
     description: |
-      YaST and yomi provide easy ways to install an operating system
-      onto a computer or other forms of machines. YaST also provides
-      its powerful tooling
+      YaST and yomi provide easy ways to install an operating system 
+      onto a computer or other machines. YaST also provides its 
+      powerful tooling via a graphical interface to easily configure 
+      your system.
     software:
       yast:
         name: YaST
@@ -26,11 +27,12 @@ technologies:
   build:
     name: Packaging
     description: |
-      Thanks to Open Build Service packaging software for most
-      distributions is easy. The review process aided by the staging
-      process using openQA and Cavil makes it possible to verify that
-      packages going into the repository work and are licensed under
-      licenses compatible with the repository.
+      Thanks to the Open Build Service (OBS), packaging software for 
+      most distributions is easy. The review process is aided by the 
+      staging process using openQA and Cavil, making it possible to 
+      verify that packages which are going into a repository work 
+      and are licensed under compatible licenses for a given 
+      repository. 
     software:
       obs:
         name: Open Build Service
@@ -43,7 +45,16 @@ technologies:
         url: https://github.com/openSUSE/cavil
   container:
     name: Images and Containers
-    description:
+    description: |
+      The Open Build Service (OBS) is a generic system used to build 
+      and distribute packages. OBS allows packagers to build in 
+      consistent, reproducible environments, ensuring that their 
+      software is consistent for users. When users then download it, 
+      they are able to receive the latest binary packages for their 
+      system(s) without having to build from source. OBS is a Free 
+      Software project, and is used by a number of projects and 
+      companies besides openSUSE, including SUSE, Tizen, VideoLAN, 
+      universities and many others.
     software:
       obs:
         name: Open Build Service
@@ -54,10 +65,10 @@ technologies:
   testing:
     name: Testing
     description: |
-      openQA is an automated test tool for operating systems
-      and the engine at the heart of openSUSE's automated testing
-      initiative. The project is used by open-source projects like
-      Fedora, Qubes OS and others.
+      openQA is an automated testing tool for operating systems and 
+      the engine at the heart of openSUSE's automated testing initiative. 
+      The project is used by open-source projects including Fedora, Qubes 
+      OS and many others.
     software:
       openqa:
         name: openQA
@@ -69,12 +80,12 @@ technologies:
       of an event by having a splash page, agenda and more. It allows
       for the submission of proposals for talks, rating and evaluating
       of submissions and the scheduling of events. It also provides
-      analytics and lets visitors register and buy tickets for an event.
+      analytics and allows visitors to register and buy tickets to an event
       The openSUSE Travel Support Program aims to support contributors
-      representing openSUSE at events, conferences and hack-fests with
-      their travel and hotel costs. The program pays up to 80% of the
-      travel and/or hotel costs for contributors who could not afford
-      going to these events otherwise.
+      representing openSUSE to attend events, conferences and hack-fests 
+      with their travel and hotel costs. The program pays up to 80% of 
+      the travel and/or hotel costs for contributors who could not afford 
+      to attend these events otherwise.
     software:
       osem:
         name: OSEM
@@ -85,11 +96,10 @@ technologies:
   btrfs:
     name: btrfs
     description: |
-      Btrfs is a file system that uses a copy on write (CoW) principle
-      that provides full-copy snapshots of files on the system. The
-      project started in 2007 and is a part of the Linux kernel. It is
-      under active development and jointly developed by multiple
-      companies.
+      Btrfs is a file system that uses a copy on write (CoW) principle 
+      that provides full-copy snapshots of files on a system. The 
+      project started in 2007 and is a part of the Linux kernel. It is 
+      under active development and jointly developed by multiple companies.
     software:
       snapper:
         name: snapper
@@ -99,7 +109,12 @@ technologies:
         url: https://github.com/openSUSE/transactional-update
   integration:
     name: Linux integration
-    description:
+    description: |
+      openSUSE integrates into Linux via many tools and configuration 
+      files including libeconf, libstorage-ng, and libpathrs. Together
+      they form the backbone of the tools that developers use for 
+      compiling, testing and developing packages on openSUSE and other 
+      Linux distributions. 
     software:
       libstorage:
         name: libstorage-ng
@@ -112,13 +127,14 @@ technologies:
         url: https://github.com/openSUSE/libeconf
   collaboration:
     name: Development collaboration
-    description: |
-      The OSC Collaboration tools can be used to facilitate packaging in openSUSE. 
-      Some of the work can now be automated with the osc collab plugin, which makes 
-      it much easier for new users to get started in packaging. It also allows you 
-      to work on a single package with the same name from multiple projects, where 
-      they will be updated simultaneously. 
-    software:
+    description: | 
+      The OSC Collaboration tools can be used to facilitate packaging 
+      in openSUSE. Some of the work can now be automated with the osc 
+      collab plugin, which makes it much easier for new users to get 
+      started in packaging. It also allows you to work on a single 
+      package with the same name from multiple projects, where they 
+      will be updated simultanously.     
+   software:
       trollolo:
         name: trollolo
         url: https://github.com/openSUSE/trollolo
