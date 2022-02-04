@@ -46,15 +46,13 @@ technologies:
   container:
     name: Images and Containers
     description: |
-      The Open Build Service (OBS) is a generic system used to build 
-      and distribute packages. OBS allows packagers to build in 
-      consistent, reproducible environments, ensuring that their 
-      software is consistent for users. When users then download it, 
-      they are able to receive the latest binary packages for their 
-      system(s) without having to build from source. OBS is a Free 
-      Software project, and is used by a number of projects and 
-      companies besides openSUSE, including SUSE, Tizen, VideoLAN, 
-      universities and many others.
+      The Open Build Service (OBS) can be used to not only build 
+      packages and appliances but also for building containers and 
+      images as well. Building containers with native tools 
+      including Docker allows us to quickly and easily build 
+      containers within OBS for multiple distributions in a secure 
+      and tested manner. Images too can be built within OBS, via 
+      KIWI and the repositories within OBS itself. 
     software:
       obs:
         name: Open Build Service
