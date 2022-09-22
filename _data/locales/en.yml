@@ -3,7 +3,7 @@ site_title_short: openSUSE
 site_description: |
   The homepage for the openSUSE Project, a worldwide effort to develop
   and promote open source software
-site_copyright: © 2021 openSUSE contributors
+site_copyright: © 2005-2022 openSUSE contributors
 search: Search
 translate: Translate
 source_code: Source Code
@@ -132,7 +132,7 @@ technologies:
       started in packaging. It also allows you to work on a single 
       package with the same name from multiple projects, where they 
       will be updated simultanously.     
-   software:
+    software:
       trollolo:
         name: trollolo
         url: https://github.com/openSUSE/trollolo
