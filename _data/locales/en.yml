@@ -78,7 +78,7 @@ technologies:
       of an event by having a splash page, agenda and more. It allows
       for the submission of proposals for talks, rating and evaluating
       of submissions and the scheduling of events. It also provides
-      analytics and allows visitors to register and buy tickets to an event
+      analytics and allows visitors to register and buy tickets to an event.
       The openSUSE Travel Support Program aims to support contributors
       representing openSUSE to attend events, conferences and hack-fests 
       with their travel and hotel costs. The program pays up to 80% of 
@@ -131,11 +131,26 @@ technologies:
       collab plugin, which makes it much easier for new users to get 
       started in packaging. It also allows you to work on a single 
       package with the same name from multiple projects, where they 
-      will be updated simultanously.     
-    software:
+      will be updated simultanously.
+   software:
       trollolo:
         name: trollolo
         url: https://github.com/openSUSE/trollolo
       osc-plugin-collab:
         name: osc-plugin-collab
         url: https://github.com/openSUSE/osc-plugin-collab
+about_title: About openSUSE
+about_description: |
+  openSUSE is a Free Software project created around the openSUSE Linux 
+  distributions and a variety of tools including YaST, the Open Build 
+  Service, openQA,Snapper, KIWI, OSEM and many others. We strive to 
+  promote an open and friendly community where everyone is welcome, 
+  regardless of where they live or work in the world. 
+  
+  openSUSE is well known for it's Linux distributions. Tumbleweed 
+  is a tested, rolling release distribution allowing users to have 
+  an up-to-date system that is tested and well supported. For users 
+  who need long-term support openSUSE maintains Leap, with releases 
+  once a year. MicroOS and Kubic are new self-contained transactional 
+  distributions for use on the desktop or in containers. 
+  
