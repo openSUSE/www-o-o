@@ -26,7 +26,11 @@ section#main { padding: 7rem 0; }
 }
 
 .text-black {
-  color: black;
+  color: black!important;
+}
+
+.text-black:hover {
+  color: inherit;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,20 +46,20 @@ section#main { padding: 7rem 0; }
 
 .gnome {
   animation: fade 30s 10s linear infinite;
-  opacity: 0.00001;
+  opacity: 0.01;
 }
 
 .term {
   animation: fade 30s 20s linear infinite;
-  opacity: 0.00001;
+  opacity: 0.01;
 }
 
 @keyframes fade {
-    0% { opacity: 0.00001; }
+    0% { opacity: 0.01; }
     2% { opacity: 1; }
     32% { opacity: 1; }
-    34% { opacity: 0.00001; }
-    100% { opacity: 0.00001; }
+    34% { opacity: 0.01; }
+    100% { opacity: 0.01; }
 }
 
 
@@ -70,4 +74,9 @@ section#main { padding: 7rem 0; }
 
 section {
   scroll-margin-top: 3.625rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
 }

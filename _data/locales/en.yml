@@ -9,13 +9,20 @@ translate: Translate
 source_code: Source Code
 license: License
 learn_more: Learn More
+
+main_h1: An Operating System for You
+main_lead: Select the distribution that best suits your needs and let yourself enjoy computing once again
+main_desktop: Get for Desktop
+main_server: Get for Server
+
+technologies_h1: Our Technologies
 technologies:
   config:
     name: System Configuration
     description: |
-      YaST and yomi provide easy ways to install an operating system 
-      onto a computer or other machines. YaST also provides its 
-      powerful tooling via a graphical interface to easily configure 
+      YaST and yomi provide easy ways to install an operating system
+      onto a computer or other machines. YaST also provides its
+      powerful tooling via a graphical interface to easily configure
       your system.
     software:
       yast:
@@ -27,12 +34,12 @@ technologies:
   build:
     name: Packaging
     description: |
-      Thanks to the Open Build Service (OBS), packaging software for 
-      most distributions is easy. The review process is aided by the 
-      staging process using openQA and Cavil, making it possible to 
-      verify that packages which are going into a repository work 
-      and are licensed under compatible licenses for a given 
-      repository. 
+      Thanks to the Open Build Service (OBS), packaging software for
+      most distributions is easy. The review process is aided by the
+      staging process using openQA and Cavil, making it possible to
+      verify that packages which are going into a repository work
+      and are licensed under compatible licenses for a given
+      repository.
     software:
       obs:
         name: Open Build Service
@@ -46,13 +53,13 @@ technologies:
   container:
     name: Images and Containers
     description: |
-      The Open Build Service (OBS) can be used to not only build 
-      packages and appliances but also for building containers and 
-      images as well. Building containers with native tools 
-      including Docker allows us to quickly and easily build 
-      containers within OBS for multiple distributions in a secure 
-      and tested manner. Images too can be built within OBS, via 
-      KIWI and the repositories within OBS itself. 
+      The Open Build Service (OBS) can be used to not only build
+      packages and appliances but also for building containers and
+      images as well. Building containers with native tools
+      including Docker allows us to quickly and easily build
+      containers within OBS for multiple distributions in a secure
+      and tested manner. Images too can be built within OBS, via
+      KIWI and the repositories within OBS itself.
     software:
       obs:
         name: Open Build Service
@@ -63,10 +70,13 @@ technologies:
   testing:
     name: Testing
     description: |
-      openQA is an automated testing tool for operating systems and 
-      the engine at the heart of openSUSE's automated testing initiative. 
-      The project is used by open-source projects including Fedora, Qubes 
-      OS and many others.
+      openQA is an automated testing tool for operating systems and
+      the engine at the heart of openSUSE's automated testing initiative.
+      The project is used by open-source projects including Fedora, Qubes
+      OS and many others. It tests by performing tasks a user would do on a
+      copy of the operating system, making sure everything keeps working
+      as new updates roll around, in a much faster and repetitive fashion
+      than any person could.
     software:
       openqa:
         name: openQA
@@ -80,9 +90,9 @@ technologies:
       of submissions and the scheduling of events. It also provides
       analytics and allows visitors to register and buy tickets to an event.
       The openSUSE Travel Support Program aims to support contributors
-      representing openSUSE to attend events, conferences and hack-fests 
-      with their travel and hotel costs. The program pays up to 80% of 
-      the travel and/or hotel costs for contributors who could not afford 
+      representing openSUSE to attend events, conferences and hack-fests
+      with their travel and hotel costs. The program pays up to 80% of
+      the travel and/or hotel costs for contributors who could not afford
       to attend these events otherwise.
     software:
       osem:
@@ -92,12 +102,15 @@ technologies:
         name: Travel Support Program
         url: https://github.com/openSUSE/travel-support-program
   btrfs:
-    name: btrfs
+    name: Immutable Snapshotting Filesystem
     description: |
-      Btrfs is a file system that uses a copy on write (CoW) principle 
-      that provides full-copy snapshots of files on a system. The 
-      project started in 2007 and is a part of the Linux kernel. It is 
-      under active development and jointly developed by multiple companies.
+      Btrfs is a filesystem that uses a copy on write (CoW) principle
+      that provides full-copy snapshots of files on a system. Snapper
+      uses that to allow simple management of snapshots from CLI and
+      booting into snapshots from the bootloader. Transactional Update
+      goes a step further and allows users to upgrade their system
+      without ever touching the running system, while the system is
+      running, minimizing downtime.
     software:
       snapper:
         name: snapper
@@ -105,52 +118,37 @@ technologies:
       tu:
         name: transactional-update
         url: https://github.com/openSUSE/transactional-update
-  integration:
-    name: Linux integration
-    description: |
-      openSUSE integrates into Linux via many tools and configuration 
-      files including libeconf, libstorage-ng, and libpathrs. Together
-      they form the backbone of the tools that developers use for 
-      compiling, testing and developing packages on openSUSE and other 
-      Linux distributions. 
-    software:
-      libstorage:
-        name: libstorage-ng
-        url: https://github.com/openSUSE/libstorage-ng
-      libpathrs:
-        name: libpathrs
-        url: https://github.com/openSUSE/libpathrs
-      libeconf:
-        name: libeconf
-        url: https://github.com/openSUSE/libeconf
   collaboration:
-    name: Development collaboration
-    description: | 
-      The OSC Collaboration tools can be used to facilitate packaging 
-      in openSUSE. Some of the work can now be automated with the osc 
-      collab plugin, which makes it much easier for new users to get 
-      started in packaging. It also allows you to work on a single 
-      package with the same name from multiple projects, where they 
+    name: Developer collaboration
+    description: |
+      The various ollaboration tools can be used to facilitate development
+      in openSUSE. Some of the work can now be automated with the osc
+      collab plugin, which makes it much easier for new users to get
+      started in packaging. It also allows you to work on a single
+      package with the same name from multiple projects, where they
       will be updated simultanously.
-   software:
+    software:
       trollolo:
         name: trollolo
         url: https://github.com/openSUSE/trollolo
       osc-plugin-collab:
         name: osc-plugin-collab
         url: https://github.com/openSUSE/osc-plugin-collab
+
+news_h1: News
+news_more: More News...
+
 about_title: About openSUSE
 about_description: |
-  openSUSE is a Free Software project created around the openSUSE Linux 
-  distributions and a variety of tools including YaST, the Open Build 
-  Service, openQA,Snapper, KIWI, OSEM and many others. We strive to 
-  promote an open and friendly community where everyone is welcome, 
-  regardless of where they live or work in the world. 
-  
-  openSUSE is well known for it's Linux distributions. Tumbleweed 
-  is a tested, rolling release distribution allowing users to have 
-  an up-to-date system that is tested and well supported. For users 
-  who need long-term support openSUSE maintains Leap, with releases 
-  once a year. MicroOS and Kubic are new self-contained transactional 
-  distributions for use on the desktop or in containers. 
-  
+  openSUSE is a Free Software project created around the openSUSE Linux
+  distributions and a variety of tools including YaST, the Open Build
+  Service, openQA,Snapper, KIWI, OSEM and many others. We strive to
+  promote an open and friendly community where everyone is welcome,
+  regardless of where they live or work in the world.
+
+  openSUSE is well known for it's Linux distributions. Tumbleweed
+  is a tested, rolling release distribution allowing users to have
+  an up-to-date system that is tested and well supported. For users
+  who need long-term support openSUSE maintains Leap, with releases
+  once a year. MicroOS and Kubic are new self-contained transactional
+  distributions for use on the desktop or in containers.

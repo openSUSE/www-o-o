@@ -9,12 +9,10 @@ github_url: https://github.com/openSUSE/www-o-o
 weblate_url: https://l10n.opensuse.org/projects/www-o-o/
 
 navbar_links:
+  - text: About
+    link: /about
   - text: Technologies
-    link: /#technologies
-  - text: News
-    link: /#news
-  - text: Community
-    link: /#community
+    link: /technologies
   - locales
 
 footer_links:

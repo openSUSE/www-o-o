@@ -1,0 +1,26 @@
+---
+title: Technologies
+layout: markdown
+---
+<h1 class="display-4 text-md-left text-center font-weight-bold">{{ locale.technologies_h1 }}</h1>
+<div class="nav flex-md-column flex-row nav-pills pb-3 justify-content-center" id="technology-tab" role="tablist" aria-orientation="vertical">
+  {%- for tech in locale.technologies %}
+    {%- assign icon = tech[0] %}
+    {%- assign technology = tech[1] %}
+    <h2>{% include icons/{{ icon }}.svg %} {{ technology.name }}</h2>
+    {%- assign icon = tech[0] %}
+    {%- assign technology = tech[1] %}
+    <div class="row">
+      <div class="col-md-3">
+        {%- for hash in technology.software %}
+          {%- assign softicon = hash[0] %}
+          {%- assign software = hash[1] %}
+          <a class="btn btn-link" href="{{ software.url }}"><span class="d-flex align-items-center">{% include icons/{{ softicon }}.svg %}<span class="ml-1">{{ software.name }}</span></span></a>
+        {%- endfor %}
+      </div>
+      <div class="col-md-9">
+        <p>{{ technology.description | markdownify }}</p>
+      </div>
+    </div>
+  {%- endfor %}
+</div>

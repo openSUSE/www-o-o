@@ -6,3 +6,4 @@ group :jekyll_plugins do
     gem 'jekyll-theme-opensuse', :git => 'https://github.com/opensuse/jekyll-theme.git', :branch => "l10n-feat"
 end
 gem 'rss'
+gem 'webrick'

@@ -8,10 +8,10 @@
         {% include images/laptop.svg %}
       </div>
       <div class="col-md-7">
-        <h1 class="display-4">Operating System for you</h1>
-        <p class="lead">Select the distribution that best suits your needs and let yourself enjoy computing once again</p>
-        <a href="https://get.opensuse.org/desktop" class="btn btn-light"><span class="d-flex align-items-center">{% include icons/desktop.svg %}<span class="ml-1">Get for Desktop</span></span></a>
-        <a href="https://get.opensuse.org/server" class="btn btn-light"><span class="d-flex align-items-center">{% include icons/server.svg %}<span class="ml-1">Get for Server</span></span></a>
+        <h1 class="display-4 font-weight-bold">{{ locale.main_h1 }}</h1>
+        <p class="lead">{{ locale.main_lead }}</p>
+        <a href="https://get.opensuse.org/desktop" class="btn btn-light"><span class="d-flex align-items-center">{% include icons/desktop.svg %}<span class="ml-1">{{ locale.main_desktop }}</span></span></a>
+        <a href="https://get.opensuse.org/server" class="btn btn-light"><span class="d-flex align-items-center">{% include icons/server.svg %}<span class="ml-1">{{ locale.main_server }}</span></span></a>
       </div>
     </div>
   </div>
@@ -27,76 +27,84 @@
   {%- endif %}
 {%- endfor %}
 
-<section class="py-3" id="technologies">
+<section class="py-3" id="news">
   <div class="container">
-    <h1 class="display-4 text-md-left text-center">Our Technologies</h1>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="nav flex-md-column flex-row nav-pills pb-3 justify-content-center" id="technology-tab" role="tablist" aria-orientation="vertical">
-          {%- for tech in locale.technologies %}
-            {%- assign icon = tech[0] %}
-            {%- assign technology = tech[1] %}
-              <a class="nav-link d-flex align-items-center{% if forloop.first == true %} active{% endif %}" id="technology-{{ icon }}-tab" data-toggle="pill" href="#technology-{{ icon }}" role="tab" aria-controls="technology-{{ icon }}" aria-selected="{{ forloop.first }}">{% include icons/{{ icon }}.svg %}<span class="d-none d-md-inline ml-1">{{ technology.name }}</span></a>
-          {%- endfor %}
-        </div>
-      </div>
+    
+    {% for post in site.rss limit: 1 %}
+      <div class="row mb-4">
+      
       <div class="col-md-8">
-        <div class="tab-content" id="technology-tabContent">
-          {%- for tech in locale.technologies %}
-            {%- assign icon = tech[0] %}
-            {%- assign technology = tech[1] %}
-            <div class="tab-pane fade{% if forloop.first == true %} show active{% endif %}" id="technology-{{ icon }}" role="tabpanel" aria-labelledby="technology-{{ icon }}-tab">
-              <h3>{{ technology.name }}</h3>
-              <p>{{ technology.description | markdownify }}</p>
-              {%- for hash in technology.software %}
-                {%- assign softicon = hash[0] %}
-                {%- assign software = hash[1] %}
-                <a class="btn btn-light" href="{{ software.url }}"><span class="d-flex align-items-center">{% include icons/{{ softicon }}.svg %}<span class="d-none d-md-inline ml-1">{{ software.name }}</span></span></a>
-              {%- endfor %}
-            </div>
-          {%- endfor %}
-        </div>
+      <h1 class="display-4 font-weight-bold">In the News</h1>
+      <h2>{{ post.title }}</h2>
+      {{ post.description }} <a href="{{ post.link }}">read more</a>
       </div>
+      <img class="col-md-4" src="{{ post.image }}"/>
+      </div>
+    {% endfor %}
+    <div class="mb-3">
+      <a href="https://news.opensuse.org" class="btn btn-primary">More News</a>
     </div>
   </div>
 </section>
 
-<section class="py-3 bg-light" id="news">
+<section class="py-3 bg-light" id="meetings">
   <div class="container">
-    <h1 class="display-4 text-center">News</h1>
+    <h1 class="display-4 text-center font-weight-bold">Meetings</h1>
+    <p class="lead">Various teams within the openSUSE Project meet together in order to plan and collaborate on the future of the project and technologies within its products. Those meetings are all open to the public, here's a few upcoming ones, we hope to see you there!</p>
     <div class="row">
-    {% for post in site.rss limit: 3 %}
-      {% include single-post.html style="col-lg-4 col-md-6 col-12" %}
-    {% endfor %}
-    <div class="col m-auto d-flex">
-      <a href="https://news.opensuse.org" class="btn btn-primary m-auto">More news...</a>
+      <div class="col-md-4 mb-3">
+        <div class="card card-body bg-info text-black">
+          <h4 class="mb-1">Board Meeting</h4>
+          <p class="text-black mb-1">9. December 05:00-06:00</p>
+          <p class="text-black mb-1">The board meets biweekly to discuss various subject pertaining to the openSUSE Project</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card card-body bg-primary text-white">
+          <h4 class="mb-1">Heroes Meeting</h4>
+          <p class="text-white mb-1">11. December 08:00-09:00</p>
+          <p class="text-white mb-1">The openSUSE Heroes meet to discuss the openSUSE Infrastructure maintenance</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card card-body bg-success text-black">
+          <h4 class="mb-1">Release Engineering Meeting</h4>
+          <p class="text-black mb-1">13. December 08:00-09:00</p>
+          <p class="text-black mb-1">Release engineers discus releases and maintenance of the distributions</p>
+        </div>
+      </div>
     </div>
+    <div class="d-flex justify-content-center mb-3">
+      <a class="btn btn-primary" href="https://calendar.opensuse.org">Calendar</a>
     </div>
   </div>
 </section>
 
 <section class="py-3" id="community">
   <div class="container">
-    <h1 class="display-4 text-center">Community</h1>
+    <h1 class="display-4 text-center font-weight-bold">Community</h1>
     <p class="lead">The openSUSE Project since 2005 is a worldwide community of people dedicated to making open source software, documentation and artwork as well as advocating for open source. If this is your first introduction to what we do, go ahead and check out what we have in store.</p>
+    <div class="d-flex justify-content-center mb-3">
+      <a class="btn btn-primary" href="/about">Learn more</a>
+    </div>
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <h3>Events</h3>
+        <h3 class="font-weight-bold">Events</h3>
         <p>Every couple of months some members of the community meet up for various convents, meetups and booths. We even have a yearly conference! We love being able to talk, share and discuss openSUSE eye to eye, and we can guarantee that you will love it too.</p>
         <a class="btn btn-primary" href="https://events.opensuse.org">Check them out!</a>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <h3>Contribute</h3>
+        <h3 class="font-weight-bold">Contribute</h3>
         <p>Not just software, but documentation, translation, artwork, advocacy and other teams need your help. If you have a particular set of skills, we guarantee you will find something to do.</p>
         <a class="btn btn-primary" href="https://contribute.opensuse.org">What can I do?</a>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <h3>Shop</h3>
+        <h3 class="font-weight-bold">Shop</h3>
         <p>Don't want to contribute to the community directly? You can help us out by buying and wearing our merch. Show your love for the project by being a living advertisement, with a product you had to pay for.</p>
         <a class="btn btn-primary" href="https://shop.opensuse.org">See what's up</a>
       </div>
       <div class="col-lg-3 col-md-12 col-sm-6 mb-3">
-        <h3>Explore</h3>
+        <h3 class="font-weight-bold">Explore</h3>
         <p>This is only the frontpage, the community made and continues to make software, documentation and artwork for you to enjoy and use. We are also on various social media, so go ahead and follow us on it. You can find links to all of this and more in the megamenu.</p>
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#megamenu" aria-expanded="false">Toggle megamenu</button>
       </div>
