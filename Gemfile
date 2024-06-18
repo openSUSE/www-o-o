@@ -7,3 +7,5 @@ group :jekyll_plugins do
 end
 gem 'rss'
 gem 'webrick'
+gem 'icalendar-recurrence'
+gem 'activesupport'

@@ -80,3 +80,31 @@ img {
   max-width: 100%;
   border-radius: 4px;
 }
+
+#meetings .card a {
+  text-decoration: underline 1px solid;
+  color: inherit;
+}
+
+#meetings .card a.title {
+  text-decoration: none;
+}
+
+#meetings .card a.title h3::first-line {
+  text-decoration: underline 2px wavy yellow;
+  text-decoration-skip-ink: none;
+  line-height: 1.9rem
+}
+
+#meetings .card a.title:hover h3::first-line {
+  text-decoration-style: solid;
+}
+
+#meetings .card a.title h3 {
+  font-size: 4rem;
+  line-height: 1.5rem;
+}
+
+#meetings .card a.title h3 span {
+  font-size: 2rem;
+}

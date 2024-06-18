@@ -2,7 +2,7 @@ title: openSUSE
 title_short: openSUSE
 description: The homepage for the openSUSE Project, a worldwide effort to develop and promote open source software
 email: admin@opensuse.org
-copyright: © 2005-2021 openSUSE contributors
+copyright: © 2005-2024 openSUSE contributors
 baseurl: ""
 url: https://www.opensuse.org
 github_url: https://github.com/openSUSE/www-o-o
@@ -28,6 +28,8 @@ collections:
 
 rss:
   source: https://news.opensuse.org/feed.xml
+calendar:
+  source: https://calendar.opensuse.org/main.ics
 
 # Only edit below if you know what you are doing!
 

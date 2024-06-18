@@ -3,7 +3,7 @@ site_title_short: openSUSE
 site_description: |
   The homepage for the openSUSE Project, a worldwide effort to develop
   and promote open source software
-site_copyright: © 2005-2022 openSUSE contributors
+site_copyright: © 2005-2024 openSUSE contributors
 search: Search
 translate: Translate
 source_code: Source Code
@@ -12,8 +12,8 @@ learn_more: Learn More
 
 main_h1: An Operating System for You
 main_lead: Select the distribution that best suits your needs and let yourself enjoy computing once again
-main_desktop: Get for Desktop
-main_server: Get for Server
+main_desktop: For a Desktop
+main_server: For a Server
 
 technologies_h1: Our Technologies
 technologies:

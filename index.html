@@ -19,11 +19,11 @@
 
 {%- for banner in site.banners %}
   {%- if banner.startDate <= site.time and banner.endDate >= site.time %}
-    <section class="{{ banner.style }}">
+    <a href="{{ banner.link }}" class="d-block {{ banner.style }}">
       <div class="container">
         {{ banner.content }}
       </div>
-    </section>
+    </a>
   {%- endif %}
 {%- endfor %}
 
@@ -38,7 +38,7 @@
       <h2>{{ post.title }}</h2>
       {{ post.description }} <a href="{{ post.link }}">read more</a>
       </div>
-      <img class="col-md-4" src="{{ post.image }}"/>
+      <img class="col-md-4 my-auto" src="{{ post.image }}"/>
       </div>
     {% endfor %}
     <div class="mb-3">
@@ -51,28 +51,17 @@
   <div class="container">
     <h1 class="display-4 text-center font-weight-bold">Meetings</h1>
     <p class="lead">Various teams within the openSUSE Project meet together in order to plan and collaborate on the future of the project and technologies within its products. Those meetings are all open to the public, here's a few upcoming ones, we hope to see you there!</p>
+    <script type="module" src="/assets/js/local-time.js"></script> 
     <div class="row">
+      {% for meeting in site.meetings limit: 3 %}
       <div class="col-md-4 mb-3">
-        <div class="card card-body bg-info text-black">
-          <h4 class="mb-1">Board Meeting</h4>
-          <p class="text-black mb-1">9. December 05:00-06:00</p>
-          <p class="text-black mb-1">The board meets biweekly to discuss various subject pertaining to the openSUSE Project</p>
+        <div class="card card-body pt-3 h-100" style="background-color: {{ meeting.background }}; color: {{ meeting.foreground }}">
+          <a class="title" href="{{ meeting.link }}"><h3 class="mb-2 font-weight-bold"><span>{{ meeting.title }}</span></h3></a>
+          <p class="mb-1"><time datetime="{{ meeting.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" data-local="time" data-format="%a, %d %b %H:%M">{{ meeting.date | date: "%a, %d %b %H:%M" }}</time> - <time datetime="{{ meeting.end | date: "%Y-%m-%dT%H:%M:%SZ" }}" data-local="time" data-format="%H:%M %Z">{{ meeting.end | date: "%H:%M %Z" }}</time></p>
+          {{ meeting.description | markdownify | truncatewords: 30 }}
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <div class="card card-body bg-primary text-white">
-          <h4 class="mb-1">Heroes Meeting</h4>
-          <p class="text-white mb-1">11. December 08:00-09:00</p>
-          <p class="text-white mb-1">The openSUSE Heroes meet to discuss the openSUSE Infrastructure maintenance</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="card card-body bg-success text-black">
-          <h4 class="mb-1">Release Engineering Meeting</h4>
-          <p class="text-black mb-1">13. December 08:00-09:00</p>
-          <p class="text-black mb-1">Release engineers discus releases and maintenance of the distributions</p>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     <div class="d-flex justify-content-center mb-3">
       <a class="btn btn-primary" href="https://calendar.opensuse.org">Calendar</a>

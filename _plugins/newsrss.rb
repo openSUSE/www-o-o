@@ -1,11 +1,12 @@
 require "rss"
+require "yaml"
 
 class NewsRss < Jekyll::Generator
    safe true
    priority :high
    def generate(site)
-
-      feed = RSS::Parser.parse(URI.open('https://news.opensuse.org/feed.xml')).items rescue []
+      source = YAML.load_file('_config.yml').dig('rss', 'source')
+      feed = RSS::Parser.parse(URI.open(source)).items rescue []
 
       collection = Jekyll::Collection.new(site, 'rss')
       site.collections['rss'] = collection
